@@ -1,0 +1,194 @@
+---
+title: "10月论文进展汇报"
+author: ""
+date: ""
+geometry: left=3.18cm,right=3.18cm,top=2.0cm,bottom=2.0cm
+fontsize: 12pt
+output: 
+  pdf_document: 
+    latex_engine: xelatex
+header-includes:
+- \usepackage{xeCJK}
+- \usepackage{graphicx}
+- \usepackage{caption}
+- \usepackage{fancyhdr}
+- \usepackage{setspace}
+- \usepackage{booktabs}
+- \usepackage{indentfirst}
+- \setmainfont{Times New Roman}
+- \usepackage{booktabs}
+---
+
+<!---我是一个注释，不会被打印-->
+\newcommand{\makeheadrule}{%
+	\makebox[0pt][l]{\rule[0.55\baselineskip]{\headwidth}{0.4pt}}%
+	\rule[0.7\baselineskip]{\headwidth}{0.4pt}
+	\vskip-1.2\baselineskip}
+<!---上面的latex代码是设置页眉页脚的线条-->
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0.7pt}
+	\renewcommand{\footrulewidth}{0.7pt}}
+\pagestyle{plain}
+<!---上面的latex代码设置页眉页脚-->
+\setlength{\parindent}{2em}<!---缩进4个字符-->
+\setlength{\parskip}{0.5em}<!---段距-->
+\doublespacing<!---2倍行距-->
+<!---下面是正文部分-->
+\captionsetup{labelformat = empty}
+
+# 1. 各国主权CDS的VAR分析  
+
+该部分主要呈现了欧猪五国主权CDS的VAR分析结果、中国与欧猪五国主权CDS的VAR分析结果、中国与德国主权CDS的VAR分析结果、中国与美国主权CDS的VAR分析结果。
+
+## 1.1 欧猪五国主权CDS的VAR分析  
+
+在对中国主权CDS和欧洲国家主权CDS进行VAR回归分析之前，我们先对欧猪五国（爱尔兰、意大利、葡萄牙、西班牙、希腊）之间的主权CDS进行VAR回归分析。我们选取欧猪五国2008年11月18日至2016年10月4日的日度主权CDS利差数据进行VAR回归，结果如下：   
+
+![](/Users/ke/Desktop/VAR1.1.1.png)
+
+![](/Users/ke/Desktop/VAR1.1.2.png)
+
+![](/Users/ke/Desktop/VAR1.1.3.png)
+
+从回归结果看出，意大利和爱尔兰、葡萄牙和爱尔兰、西班牙和爱尔兰、葡萄牙和意大利、西班牙和意大利之间的结果是显著的。为了更清楚地展现回归结果，将结果显著的脉冲响应图放至下图中：
+
+![](/Users/ke/Desktop/VAR1.1.4.png)  
+
+## 1.2 中国与欧猪五国主权CDS的VAR分析    
+
+我们选取欧猪五国和中国2008年11月18日至2016年10月4日的日度主权CDS利差数据进行VAR回归，结果如下：   
+
+![](/Users/ke/Desktop/VAR1.2.1.png)     
+
+![](/Users/ke/Desktop/VAR1.2.2.png)   
+
+![](/Users/ke/Desktop/VAR1.2.3.png) 
+
+## 1.3 中国与德国主权CDS的VAR分析     
+
+我们选取德国和中国2008年11月18日至2016年10月4日的日度主权CDS利差数据进行VAR回归，结果如下：   
+
+![](/Users/ke/Desktop/VAR1.3.1.png)  
+
+![](/Users/ke/Desktop/VAR1.3.2.png)   
+
+![](/Users/ke/Desktop/VAR1.3.3.png)   
+
+## 1.4 中国与美国主权CDS的VAR分析    
+
+我们选取美国和中国2008年11月18日至2016年10月4日的日度主权CDS利差数据进行VAR回归，结果如下：   
+
+![](/Users/ke/Desktop/VAR1.4.1.png)    
+
+![](/Users/ke/Desktop/VAR1.4.2.png)    
+
+![](/Users/ke/Desktop/VAR1.4.3.png)   
+
+# 2. CDS市场概况   
+
+## 2.1 全球CDS市场概况   
+
+\begin{table}[!htbp]
+\centering
+\caption{Global CDS market}
+\label{my-label}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+                             & \multicolumn{4}{c}{Notional amounts outstanding(Billions of US dollars)}                                                                      \\ \midrule
+                             & \multicolumn{1}{l}{H1 2014} & \multicolumn{1}{l}{H2 2014} & \multicolumn{1}{l}{H1 2015} & \multicolumn{1}{l}{H2 2015} \\
+By counterparty              &                             &                             &                             &                             \\
+\qquad Reporting dealers            & 9,540                       & 7,717                       & 6,503                       & 5,451                       \\
+\qquad Other financial institutions & 9,719                       & 8,485                       & 7,885                       & 6,652                       \\
+\qquad \qquad Central counterparties       & 5,196                       & 4,790                       & 4,505                       & 4,185                       \\
+\qquad \qquad Banks and securities firms   & 2,042                       & 1,348                       & 1,229                       & 854                         \\
+\qquad \qquad Insurance firms              & 197                         & 216                         & 179                         & 163                         \\
+\qquad \qquad SPVs, SPCs and SPEs          & 270                         & 219                         & 186                         & 170                         \\
+\qquad \qquad Hedge funds                  & 1,112                       & 814                         & 788                         & 616                         \\
+\qquad \qquad Other financial customers    & 901                         & 1,098                       & 999                         & 665                         \\
+\qquad Non-financial customers      & 203                         & 197                         & 206                         & 190                         \\
+By rating category           &                             &                             &                             &                             \\
+\qquad Investment grade             & 12,606                      & 9,741                       & 9,319                       & 7,975                       \\
+\qquad Non-investment grade         & 4,223                       & 3,599                       & 3,252                       & 2,228                       \\
+\qquad Non-rated                    & 2,634                       & 3,059                       & 2,024                       & 2,091                       \\
+By maturity                  &                             &                             &                             &                             \\
+\qquad Up to one year               & 3,718                       & 3,010                       & 2,426                       & 2,689                       \\
+\qquad Between one and five years   & 14,491                      & 12,367                      & 10,944                      & 8,778                       \\
+\qquad Over five years              & 1,252                       & 1,022                       & 1,224                       & 827                         \\
+By sector                    &                             &                             &                             &                             \\
+\qquad Sovereigns                   & 2,686                       & 2,467                       & 2,284                       & 2,001                       \\
+\qquad Financial firms              & 5,000                       & 3,962                       & 3,259                       & 2,625                       \\
+\qquad Non-financial firms          & 6,539                       & 5,624                       & 5,275                       & 4,290                       \\
+\qquad Securitised products         & 480                         & 227                         & 213                         & 225                         \\
+\qquad Multiple sectors             & 4,756                       & 4,117                       & 3,564                       & 3,152                       \\
+By location of counterparty  &                             &                             &                             &                             \\
+\qquad Home country                 & 3,734                       & 3,423                       & 3,510                       & 2,894                       \\
+\qquad Abroad                       & 15,728                      & 12,976                      & 11,085                      & 9,400                       \\
+\qquad \qquad United States                & 4,014                       & 3,412                       & 3,159                       & 2,575                       \\
+\qquad \qquad European developed           & 10,173                      & 8,205                       & 6,782                       & 5,718                       \\
+\qquad \qquad Japan                        & 151                         & 117                         & 116                         & 137                         \\
+\qquad \qquad Other Asian countries        & 148                         & 127                         & 100                         & 102                         \\
+\qquad \qquad Latin America                & 785                         & 686                         & 607                         & 460                         \\
+\qquad \qquad All other countries          & 458                         & 430                         & 320                         & 407                         \\ \bottomrule
+\end{tabular}
+\end{table}
+Source: BIS
+
+从上表所示，下面将从结合相关数据，从交易对手、评级、期限、部门和地区来对全球CDS市场进行相关分析。从交易对手看，申报交易商和其他金融机构占据绝对主导地位。从评级上看，投资级别占比超过60%，总体而言评级相对处于较高地位。从期限上看，1-5年期的CDS产品最多，低于1年期的次之，超过5年期的CDS产品最少，从而也说明1-5年期的CDS产品流动性最好。从部门上看，主权CDS在整个CDS市场中占比相对较低，但份额整体相对较为稳定。从交易对手的地区分布来看，中国CDS产品占比仅次于美国和欧洲发达国家。
+
+## 2.2 主权CDS概况  
+
+主权CDS是指以主权债务为标的的信用违约互换，可以用来保护投资者不受主权债务从所谓的信用事件，如违约或债务重组而产生的损失。随着信用衍生品市场的快速发展，，主权CDS已成为信用风险管理的重要工具，其风险溢价通常被视为信用风险的市场指标。CDS市场最早开始于90年代初期，主要以公司债为标的,而那时用来对冲和交易主权国家信用风险的工具主要是芝加哥商品交易所（CME）的布雷迪债券期货合约，当时主要针对三个国家，阿根廷、巴西和墨西哥。随后，主权CDS市场逐渐起步，主权CDS是CDS市场中占比小但是发展迅速的一部分，尤其在2008年全球金融危机后，主权CDS市场得到了爆发式的增长。   
+
+类似于CDS，主权CDS主要有三个功能：   
+
+1.对冲主权信用风险。主权债务的所有者通过购买CDS来保护他们自己免遭违约或者是其他影响其债务的信用事件带来的损失。同时，主权CDS也被用来对冲那些其价值与主权国家信誉密切相关的其他资产，例如某些超大央企或者国企发行的债券。     
+
+2.投机。主权CDS合同可以在不持有标的债务的基础上进行买卖，也就是在没有相关主权债权的情况下表达其对债券发行方的正面或者负面看法。因此，虽然主权CDS和其他CDS都被视作“违约保险”，但他们不同于传统保险的购买方，传统保险的购买方通常拥有该标的资产，或从中获益，而对主权CDS买方则不要求其持有相关主权债务。虽然一个主权国家的信誉也可以通过其他资产来反映，例如利率远期、现债市场和其他的衍生品，但它们同时也反映了出主权信用风险之外的其他风险。
+
+3.套利交易。主权CDS可以用来获取主权CDS和其标的债务定价之差的套利。这个策略是基于CDS可以用来复制标的债务现金流的原理。从这个方面来说，当CDS利差小于标的债务的信用利差时，可以通过购买CDS获取套利空间，反之亦然。    
+
+# 3. 主成分分析及NS模型分析
+
+## 3.1 对十年期及十年以下期限CDS利差提取主成分     
+
+如下表所示，第一主成分对原变量方差有88.4%的解释力度，可以考虑用第一主成分进行VAR回归分析。同时从对中国主权CDS主成分分析的结果来看，CDS中可能包含水平和斜率两个因素，所以考虑利用NS模型来对CDS利差曲线建模后续将进一步考虑利用CDS第一主成分或者CDS水平、斜率、曲率与城投债和地方债利差进行VAR回归。   
+
+\begin{table}[!htbp]
+\centering
+\caption{The Components of Different Types}
+\label{my-label}
+\begin{tabular}{@{}llllllll@{}}
+\toprule
+                       & Comp.1 & Comp.2 & Comp.3 & Comp.4 & Comp.5 & Comp.6 & Comp.7 \\ \midrule
+Standard deviation     & 2.658  & 0.944  & 0.167  & 0.091  & 0.048  & 0.037  & 0.027  \\
+Proportion of Variance & 0.884  & 0.111  & 0.003  & 0.001  & 0.000  & 0.000  & 0.000  \\
+Proportion             & 0.884  & 0.995  & 0.998  & 0.999  & 1.000  & 1.000  & 1.000  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+## 3.2 利用Nelson-Siegel模型对十年期及十年以下期限CDS利差进行分解   
+
+由于之前直接对CDS利差和地方债、城投债利差做VAR分析，结果不太理想，在牛老师的建议下，考虑先利用Nelson-Siegel模型将CDS利差分解为水平因子、斜率因子、曲率因子，再考虑将分解出的三因子分别和地方债利差、城投债利差以及地方债和城投债利差的加权平均进行进一步的VAR分析。       
+
+Nelson-Siegel模型: $$y_t(\tau)=\beta_{1t}+\beta_{2t}\big(\frac{1-e^{-\lambda_{t}\tau}}{\lambda_{t}\tau}\big)+\beta_{3t}\big(\frac{1-e^{-\lambda_{t}\tau}}{\lambda_{t}\tau}-e^{-\lambda_{t}\tau}\big)$$
+
+首先，在三因子模型中画出因子负荷如下图所示（根据Diebold and Li(2006)选取 $\lambda_{t}=0.0609$）：    
+
+![](/Users/ke/Desktop/proposal/论文进展汇报2016.9.11/CDS/betas_loading.png)     
+
+对CDS利差的日数据、周数据、月数据分别进行三因子分解，分解出的三因子$\beta1,\beta2,\beta3$如下图所示：    
+
+![](/Users/ke/Desktop/proposal/论文进展汇报2016.9.11/CDS/Factor_trend_daily.png)     
+
+![](/Users/ke/Desktop/proposal/论文进展汇报2016.9.11/CDS/Factor_trend_weekly.png)   
+
+![](/Users/ke/Desktop/proposal/论文进展汇报2016.9.11/CDS/Factor_trend_monthly.png)    
+
+
+
+
+
+
+
